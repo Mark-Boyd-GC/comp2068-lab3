@@ -1,0 +1,19 @@
+<%- include ('../partials/header') %>
+
+<div class="container my-5">
+  <header>
+    <h1><%= product.name %></h1>
+    <br>
+    <div class="price">
+      <label for="price">Price: </label> $<%- product.price %>
+    </div>
+  </header>
+  <hr>
+  <div class="description">
+    <label for="description" style="text-decoration: underline;">Description</label>
+    <br>
+    <%- product.description %>
+  </div>
+</div>
+
+<%- include ('../partials/footer') %>
